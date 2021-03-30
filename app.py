@@ -45,17 +45,13 @@ st.markdown("""
 
 This app allows you to predict the bioactivity towards inhibting the `Acetylcholinesterase` enzyme. `Acetylcholinesterase` is a drug target for Alzheimer's disease.
 
-**Special thanks to**
-- [Chanin Nantasenamat](https://medium.com/@chanin.nantasenamat) (aka Data Professor)
-- Descriptor calculated using [PaDEL-Descriptor](http://www.yapcwsoft.com/dd/padeldescriptor/).
----
 """)
 
 # Sidebar
 with st.sidebar.header('1. Upload your CSV data'):
     uploaded_file = st.sidebar.file_uploader("Upload your input file", type=['txt'])
     st.sidebar.markdown("""
-[Example input file](https://raw.githubusercontent.com/dataprofessor/bioactivity-prediction-app/main/example_acetylcholinesterase.txt)
+[Example input file](https://gist.githubusercontent.com/iamkishansharma/a66db4ca018e1757357bb00ea97e5167/raw/9a2a28d49913ce7be9196311706b6f794a4671f7/example_acetylcholinesterase.txt)
 """)
 
 if st.sidebar.button('Predict'):
